@@ -1,2 +1,2 @@
-# react-project-firegramm
+# react-project-firegram
 Created with CodeSandbox
