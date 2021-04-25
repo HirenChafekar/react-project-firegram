@@ -44,35 +44,39 @@ function SignUp() {
   return (
     <div className="mycard">
       <div className="card authcard input-field">
-        <h2>FunShot</h2>
+        <h2>Photo Gallery</h2>
         <input
+          className="form_input"
           type="text"
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
+          className="form_input"
           type="text"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
+          className="form_input"
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-
+        <br />
         <button
+          className="form_signup"
           onClick={handleSignup}
-          className="btn waves-effect waves-light "
-          style={{ background: "#efb6b2" }}
+          className="btn waves-effect waves-light"
+          style={{ background: "#efb6b2", color: "black" }}
         >
           SignUp
         </button>
         <h6>
-          <Link to="/signin" style={{ color: "#ff4a4a" }}>
+          <Link to="/signin" className="form_signup">
             {" "}
             Already have an account ?
           </Link>
